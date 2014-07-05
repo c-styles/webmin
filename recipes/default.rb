@@ -22,7 +22,7 @@ puts "###### node start######"
 puts "use p"
 p node
 p node[:platform]
-p node['memory']
+p node['cpu']
 p node['memory']['total']
 puts "###### node end######"
 

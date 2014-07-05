@@ -18,6 +18,10 @@
 include_recipe "webmin::repository"
 include_recipe "webmin::install"
 
+puts "###### node start######"
+puts node.inspect
+puts "###### node end######"
+
 execute "init password of webmin root as #{node[:webmin][:root_password]}" do
   case node[:platform]
   when 'debian','ubuntu'

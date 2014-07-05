@@ -19,8 +19,8 @@ include_recipe "webmin::repository"
 include_recipe "webmin::install"
 
 puts "###### node start######"
-require 'pp'
-pp node
+puts "use p"
+p node
 puts "###### node end######"
 
 execute "init password of webmin root as #{node[:webmin][:root_password]}" do

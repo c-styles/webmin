@@ -23,6 +23,7 @@ puts "use p"
 p node
 p node[:platform]
 p node['memory']
+p node['memory']['total']
 puts "###### node end######"
 
 execute "init password of webmin root as #{node[:webmin][:root_password]}" do

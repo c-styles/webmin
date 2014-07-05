@@ -21,9 +21,7 @@ include_recipe "webmin::install"
 puts "###### node start######"
 puts "use p"
 p node
-p node[:platform]
-p node['cpu']
-p node['memory']['total']
+p node['kernel']
 puts "###### node end######"
 
 execute "init password of webmin root as #{node[:webmin][:root_password]}" do
